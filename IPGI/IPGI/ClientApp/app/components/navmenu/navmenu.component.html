@@ -8,6 +8,13 @@
                 <span class='icon-bar'></span>
             </button>
             <a class='navbar-brand' [routerLink]="['/home']">IPGI</a>
+           
+            <div class='connection-indicator'>
+
+                <span class="tooltiptext">Tooltip textTooltip textTooltip textTooltip textTooltip textTooltip textTooltip textTooltip textTooltip textTooltip textTooltip textTooltip text</span>
+             
+            </div>
+
         </div>
         <div class='clearfix'></div>
         <div class='navbar-collapse collapse'>
@@ -25,6 +32,11 @@
                 <li [routerLinkActive]="['link-active']">
                     <a [routerLink]="['/fetch-data']">
                         <span class='glyphicon glyphicon-th-list'></span> Fetch data
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/db-data']">
+                        <span class='glyphicon glyphicon-th-list'></span> DataBase data
                     </a>
                 </li>
             </ul>
